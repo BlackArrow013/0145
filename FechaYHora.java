@@ -37,6 +37,9 @@ public class FechaYHora
     public void avanzar()
     {
         hora.timeTick();
+        if (hora.getTime().equals("00:00")){
+            fecha.avanzarFecha();
+        }            
     }
     
     /**
